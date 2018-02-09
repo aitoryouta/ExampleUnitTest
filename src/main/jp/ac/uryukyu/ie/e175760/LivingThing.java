@@ -15,21 +15,21 @@ public class LivingThing {
     }
 
     public boolean isDead() { return dead; }
+
     public String getName(){
         return name;
     }
 
-    public void setDead(boolean dead){
-        this.dead = dead;
-    }
+    public void setDead(boolean dead){ this.dead = dead;}
 
     public int getAttack(){return attack;}
+
     public void setAttack(int attack){this.attack=attack;}
 
     public void setName(String name){this.name=name;}
-    public int getHitPoint(){
-        return hitPoint;
-    }
+
+    public int getHitPoint(){ return hitPoint; }
+
     public void setHitPoint(int hitPoint){this.hitPoint=hitPoint;}
 
 
