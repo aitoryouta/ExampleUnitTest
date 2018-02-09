@@ -19,6 +19,20 @@ public class LivingThing {
         return name;
     }
 
+    public void setDead(boolean dead){
+        this.dead = dead;
+    }
+
+    public int getAttack(){return attack;}
+    public void setAttack(int attack){this.attack=attack;}
+
+    public void setName(String name){this.name=name;}
+    public int getHitPoint(){
+        return hitPoint;
+    }
+    public void setHitPoint(int hitPoint){this.hitPoint=hitPoint;}
+
+
     public void attack(LivingThing naltoma) {
         if(hitPoint >= 0) {
             int damage = (int) (Math.random() * attack);
