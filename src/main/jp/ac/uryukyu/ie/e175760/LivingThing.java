@@ -22,7 +22,7 @@ public class LivingThing {
     public void attack(LivingThing naltoma) {
         if(hitPoint >= 0) {
             int damage = (int) (Math.random() * attack);
-           System.out.printf("%sの攻撃！%sに%dのダメージを与えた！！\n", name,getName(), damage);
+           System.out.printf("%sの攻撃！%sに%dのダメージを与えた！！\n", name,naltoma.getName(), damage);
             naltoma.wounded(damage);
         }
     }
