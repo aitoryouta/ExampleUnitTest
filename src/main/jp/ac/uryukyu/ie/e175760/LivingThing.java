@@ -34,12 +34,15 @@ public class LivingThing {
 
 
     public void attack(LivingThing naltoma) {
-        if(hitPoint > 0) {
+       {
             int damage = (int) (Math.random() * attack);
-           System.out.printf("%sの攻撃！%sに%dのダメージを与えた！！\n", name,naltoma.getName(), damage);
+           if (dead == true) {
+               damage = 0;
+           }else{
+               System.out.printf("%sの攻撃！%sに%dのダメージを与えた！！\n", name,naltoma.getName(), damage);
             naltoma.wounded(damage);
         }
-    }
+    }}
     public void wounded(int damage){
         hitPoint -= damage;
         if( hitPoint <=0 ) {
